@@ -43,6 +43,21 @@
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
+h2 {
+  font-family: 'TitlingGothicFBCondBold';
+  font-size: 4rem;
+}
+h3 {
+  font-family: 'SoletoBold';
+  font-size: 1.5rem;
+}
+p {
+  font-family: 'SoletoRegular';
+  color: rgb(18, 16, 13);
+  font-size: 1.8rem;
+  text-align: center;
+  width: 62%;
+}
 
 /*HOME*/
 .home-top {
@@ -74,6 +89,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .nav-by-number {
+  z-index: 99;
   position: fixed;
   top: 27%;
   left: 20%;
@@ -125,12 +141,56 @@ h1,h2,h3,h4,h5,h6 {
   width: 100%;
 }
 
+.home-bottom {
+  h2{color: rgb(34, 34, 33); text-align: center;
+  span{color: rgb(78, 23, 27); font-family: 'VerveineRegular'; font-weight: 400; font-size: 5rem};
+  }
+  p{
+    text-align: left;
+    color: rgb(18, 16, 13);
+    font-size: 1.5rem;
+    width: 51%;
+  };
+}
 
 
+.about{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  h2{
+    color: rgb(34, 34, 33);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 27%;
+  }
+  p{
+    position: absolute;
+    z-index: 1;
+    top: 47%;
+  }
+}
 .tours{
-  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2{color: rgb(34, 34, 33); text-align: center;
+  span{color: rgb(30, 90, 124); font-family: 'VerveineRegular'; font-weight: 400; font-size: 5rem};
+  };
+  .tour {
+    width: min-content;
+    text-align: center;
+    background-color: white;
+    p{font-size: 1.4rem; width: 100%;}
+  }
 }
 .store{
+  min-height: 800px;
+}
+.contact{
   min-height: 800px;
 }
 /*BURGER*/
@@ -195,4 +255,19 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'SoletoBold';
   src: local('Soleto'),
     url('./components/fonts/Soleto/Soleto-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'SoletoRegular';
+  src: local('Soleto'),
+    url('./components/fonts/Soleto/Soleto-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'VerveineRegular';
+  src: local('Verveine'),
+    url('./components/fonts/Verveine/VerveineRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'TitlingGothicFBCondBold';
+  src: local('TitlingGothicFBCondBold'),
+    url('./components/fonts/TitlingGothicFBCondBold/TitlingGothicFBCondBold.otf') format('truetype');
 }
