@@ -7,10 +7,10 @@ export const SliderContext = createContext();
 
 export default function Slider ({ width, height }) {
   const [items, setItems] = useState([
-    {url: 'images/videos.png', title: 'Mountain Survival Tutorial'},
-    {url: 'images/videos.png', title: 'Mountain Survival Tutorial'},
-    {url: 'images/videos.png', title: 'Mountain Survival Tutorial'},
-    {url: 'images/videos.png', title: 'Mountain Survival Tutorial'}
+    {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'},
+    {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'},
+    {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'},
+    {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'}
   ]);
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null)
