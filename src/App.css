@@ -43,6 +43,10 @@
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
+h1 {
+  font-family: 'TitlingGothicFBCondBold';
+  font-size: 15rem;
+}
 h2 {
   font-family: 'TitlingGothicFBCondBold';
   font-size: 4rem;
@@ -239,20 +243,59 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{color: rgb(34, 34, 33); text-align: center;
-  span{color: rgb(30, 90, 124); font-family: 'VerveineRegular'; font-weight: 400; font-size: 5rem};
-  };
-  .tour {
-    width: min-content;
+  h2{
+    color: rgb(34, 34, 33);
     text-align: center;
-    background-color: white;
-    p{font-size: 1.4rem; width: 100%;}
+    span{color: rgb(30, 90, 124); font-family: 'VerveineRegular'; font-weight: 400; font-size: 5rem};
+  }
+  .par-tours{margin: 3% 0 11% 0;}
+}
+.tours-content {
+  margin: 0 10%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.tour {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.3);
+  margin-bottom: 7%;
+  width: min-content;
+  text-align: center;
+  background-color: white;
+  h3{margin: 8% 0 10% 0;}
+  p{
+    text-wrap: pretty;
+    padding: 0 2.5% 15% 2.5%;
+    font-size: 1.5rem;
+    width: 100%;
   }
 }
 
 /*STORE*/
 .store{
-  min-height: 800px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+.store-header {
+  position: relative;
+  height: 100vh;
+  width: 20%;
+  h1{
+    rotate: -90deg;
+    position: absolute;
+    left: -65%;
+    top: 35%;
+  }
+}
+.nav-store {
+  height: 100vh;
+  width: 12%;
+  background-color: white;
+}
+.store-content {
+  height: 100vh;
+  width: 65%;
 }
 
 /*CONTACT*/

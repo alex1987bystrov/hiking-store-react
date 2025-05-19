@@ -1,8 +1,8 @@
 export default function Tours(){
     return(
         <div className="tours" id="tours">
-            <h2 className="head-tours">CHOOSE <span>YOUR TOUR</span></h2>
-            <p>
+            <h2 className="head-tours">CHOOSE &nbsp;&nbsp;<span>YOUR TOUR</span></h2>
+            <p className="par-tours">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Duis vitae tortor nec arcu condimentum ullamcorper quis eget felis. 
                 In posuere elit eget lacus lacinia rutrum eu at leo.
