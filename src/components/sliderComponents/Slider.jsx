@@ -1,4 +1,4 @@
-import React, { useEffect, useState, createContext } from "react";
+import React, { useState, createContext } from "react";
 import PropTypes from "prop-types";
 import SlidesList from "./SliderList";
 import Dots from "./Dots";
@@ -14,14 +14,6 @@ export default function Slider ({ width, height }) {
   ]);
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null)
-  
-  // useEffect(() => {
-  //   const loadData = async () => {
-  //     const images = await getImages();
-  //     setItems(images);
-  //   };
-  //   loadData();
-  // }, []);
 
   function changeSlide (direction = 1) {
     let slideNumber = 0;
