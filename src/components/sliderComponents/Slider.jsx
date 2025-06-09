@@ -1,28 +1,21 @@
-import React, { useEffect, useState, createContext } from "react";
-import PropTypes from "prop-types";
+import { useState, createContext } from "react";
+// import PropTypes from "prop-types";
 import SlidesList from "./SliderList";
 import Dots from "./Dots";
 
 export const SliderContext = createContext();
 
 export default function Slider ({ width, height }) {
-  const [items, setItems] = useState([
+  const initialItems = [
     {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'},
     {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'},
     {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'},
     {url: 'null', title: 'Mountain Survival Tutorial', poster: 'images/videos.png'}
-  ]);
+  ];
+  const [items, setItems] = useState(initialItems);
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null)
   
-  // useEffect(() => {
-  //   const loadData = async () => {
-  //     const images = await getImages();
-  //     setItems(images);
-  //   };
-  //   loadData();
-  // }, []);
-
   function changeSlide (direction = 1) {
     let slideNumber = 0;
 
@@ -83,12 +76,12 @@ export default function Slider ({ width, height }) {
   );
 };
 
-Slider.propTypes = {
-  width: PropTypes.string,
-  height: PropTypes.string
-};
+// Slider.propTypes = {
+//   width: PropTypes.string,
+//   height: PropTypes.string
+// };
 
-Slider.defaultProps = {
-  width: "100%",
-  height: "100%"
-};
+// Slider.defaultProps = {
+//   width: "100%",
+//   height: "100%"
+// };

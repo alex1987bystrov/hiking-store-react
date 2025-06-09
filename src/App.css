@@ -273,13 +273,15 @@ p {
 
 /*STORE*/
 .store{
+  height: 100vh;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  margin: 10% 0 15% 0;
 }
 .store-header {
   position: relative;
-  height: 100vh;
+  height: 100%;
   width: 20%;
   h1{
     rotate: -90deg;
@@ -289,7 +291,7 @@ p {
   }
 }
 .nav-store {
-  height: 100vh;
+  height: 100%;
   width: 12%;
   background-color: white;
 }
@@ -300,7 +302,33 @@ p {
 
 /*CONTACT*/
 .contact{
-  min-height: 800px;
+  min-height: 82vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  h2{
+    color: rgb(34, 34, 33);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top: 16%;
+  }
+  p{
+    position: absolute;
+    z-index: 1;
+    top: 33%;
+  }
+}
+.social {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  top: 67%;
 }
 /*BURGER*/
 /* .burger{

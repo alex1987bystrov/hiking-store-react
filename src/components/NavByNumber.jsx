@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import ListItems from "./ListItems";
 
-
-export default function NavByNumber({nOfItems, nOfListItems, nameElem, ind}){
-    // const name = nameElem;
+export default function NavByNumber({nOfItems, nOfListItems}){
     const links = [
         {id:1, link:"#home-top"},
         {id:2, link:"#about"},

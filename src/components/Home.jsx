@@ -2,7 +2,6 @@ import Logo from "./Logo";
 import NavTop from "./NavTop";
 import NavByNumber from "./NavByNumber";
 import Slider from "./sliderComponents/Slider";
-// import SimpleCarousel from "./SimpleCarousel";
 
 export default function Home(){
     return (

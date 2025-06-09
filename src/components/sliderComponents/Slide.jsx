@@ -2,6 +2,12 @@ export default function Slide({ data: { url, title, poster } }) {
   return (
     <div className="slide">
         <h3>{title}</h3>
+        {/* <iframe width="760" height="480"
+        src={url} 
+        title={title}
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> */}
         <video controls width="55%" poster={poster}>
           <source src={url} type="video/mp4"></source>
           Not found
