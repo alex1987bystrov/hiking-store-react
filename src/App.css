@@ -279,6 +279,7 @@ p {
   justify-content: space-between;
   margin: 10% 0 15% 0;
 }
+
 .store-header {
   position: relative;
   height: 100%;
@@ -286,15 +287,50 @@ p {
   h1{
     rotate: -90deg;
     position: absolute;
-    left: -65%;
+    left: -60%;
     top: 35%;
   }
 }
+
 .nav-store {
   height: 100%;
   width: 12%;
   background-color: white;
+  align-content: center;
 }
+.nav-store-dots {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.store-dot {
+  margin-top: 14px;
+  width: 22px;
+  height: 22px;
+  background-color:rgb(22, 22, 21);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.selected {
+  background-color: transparent;
+  border: rgb(22, 22, 21) solid, 5px;
+}
+.arr-up,.arr-down {
+  content: "";
+  border-right: 0.2rem solid;
+  border-top: 0.2rem solid;
+  border-color:rgb(22, 22, 21);
+  width: 1.5rem;
+  height: 1.5rem;
+  rotate: -45deg;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.arr-down {
+  margin-top: 5%;
+  rotate: 135deg;
+}
+
 .store-content {
   height: 100vh;
   width: 65%;
