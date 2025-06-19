@@ -8,10 +8,10 @@ export default function StoreContent() {
   return (
     <div
       className="store-content"
-      style={{ transform: `translateY(-${slideNumber * 100}%)` }}
+      style={{ transform: `translateY(-${slideNumber * 25}%)`, transition: '0.5s' }}
     >
       {items.map((slide, index) => (
-        <StoreContentSlide key={index} data={slide} />
+          <StoreContentSlide key={index} data={slide} />
       ))}
     </div>
   );

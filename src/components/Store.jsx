@@ -10,16 +10,20 @@ export default function Store(){
         {url: 'images/store2.png', title: 'Starter package', price: '$29'},
         {url: 'images/store1.png', title: 'Promotion in the tent', price: '$56'},
         {url: 'images/store2.png', title: 'Starter package', price: '$29'},
+        {url: 'images/store1.png', title: 'Promotion in the tent', price: '$56'},
+        {url: 'images/store2.png', title: 'Starter package', price: '$29'},
+        {url: 'images/store1.png', title: 'Promotion in the tent', price: '$56'},
+        {url: 'images/store2.png', title: 'Starter package', price: '$29'},
     ];
     const [items, setItems] = useState(initialItems);
     const [slide, setSlide] = useState(0);
     // const [touchPosition, setTouchPosition] = useState(null);
 
     function nextSlide () {
-        (slide < items.length-1) ? setSlide(slide => slide + 1) : setSlide(0);
+        (slide < (items.length/2)-1) ? setSlide(slide => slide + 1) : setSlide(0);
     };
     function prevSlide () {
-        (slide > 0) ? setSlide(slide => slide - 1) : setSlide(items.length-1);
+        (slide > 0) ? setSlide(slide => slide - 1) : setSlide((items.length/2)-1);
     };
     function goToSlide (number) {
         setSlide(number % items.length);
@@ -41,7 +45,9 @@ export default function Store(){
                     <StoreNav />
                 </div>
                 <div className="store-header"><h1>STORE</h1></div>
-                <StoreContent />
+                <div className="store-content-section">
+                    <StoreContent />
+                </div>
             </StoreContext.Provider>
         </div>
     );

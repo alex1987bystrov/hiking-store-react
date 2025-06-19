@@ -7,16 +7,16 @@ export default function StoreNav(){
     
     function render () {
         const dots = [];
-        for (let i = 0; i < slidesCount; i++) {
+        for (let i = 0; i < slidesCount/2; i++) {
           dots.push(<StoreDot key={`store-dot-${i}`} number={i} />);
         }
         return dots;
     };
     return (
         <div className="nav-store-dots">
-            <div className="arr-up" onClick={() => prevSlide()} />
+            <div className="arr-up" onClick={() => nextSlide()} />
             {render()}
-            <div className="arr-down" onClick={() => nextSlide()} />
+            <div className="arr-down" onClick={() => prevSlide()} />
         </div> 
     );
 }

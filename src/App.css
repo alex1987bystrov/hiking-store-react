@@ -265,7 +265,7 @@ p {
   h3{margin: 8% 0 10% 0;}
   p{
     text-wrap: pretty;
-    padding: 0 2.5% 15% 2.5%;
+    padding: 0 2.5% 7% 2.5%;
     font-size: 1.5rem;
     width: 100%;
   }
@@ -331,9 +331,36 @@ p {
   rotate: 135deg;
 }
 
-.store-content {
+.store-content-section {
+  overflow: hidden;
   height: 100vh;
   width: 65%;
+}
+.store-content :nth-child(even) {
+  h3 {
+    top: auto;
+    bottom: 2%;
+    color: white;
+  }
+  img {margin-top: 7%;}
+}
+
+.store-slide {
+  position: relative;
+  text-align: center;
+  h3 {
+    min-width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 4%;
+    left: 36%;
+  }
+  span {
+    font-size: 5rem;
+    font-family: 'VerveineRegular';
+  }
 }
 
 /*CONTACT*/
