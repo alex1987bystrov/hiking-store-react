@@ -338,6 +338,7 @@ p {
 }
 .store-content :nth-child(even) {
   h3 {
+    min-width: 35%;
     top: auto;
     bottom: 2%;
     color: white;
@@ -354,7 +355,7 @@ p {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 4%;
+    top: 8%;
     left: 36%;
   }
   span {
@@ -392,6 +393,11 @@ p {
   position: absolute;
   z-index: 1;
   top: 67%;
+}
+.designed {
+  position: absolute;
+  text-align: center;
+  bottom: 10%;
 }
 /*BURGER*/
 /* .burger{

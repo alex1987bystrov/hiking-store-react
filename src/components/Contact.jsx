@@ -22,6 +22,12 @@ export default function Contact(){
                      <img src="icons/whatsapp.png" alt="icon"></img>
                 </a>
             </div>
+            <div className="designed">
+                <a href="http://www.freepik.com">Designed by Freepik</a>
+                <br/>
+                <br/>
+                <a href="https://www.alex_bystrov_1987@mail.ru">Prodused by www.alex_bystrov_1987@mail.ru</a>
+            </div>
         </div>
     );
 }
