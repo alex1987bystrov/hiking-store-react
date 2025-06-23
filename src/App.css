@@ -336,17 +336,12 @@ p {
   height: 100vh;
   width: 65%;
 }
-.store-content :nth-child(even) {
-  h3 {
-    min-width: 35%;
-    top: auto;
-    bottom: 2%;
-    color: white;
-  }
-  img {margin-top: 7%;}
-}
 
 .store-slide {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   text-align: center;
   h3 {
@@ -355,12 +350,23 @@ p {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 36%;
   }
   span {
     font-size: 5rem;
     font-family: 'VerveineRegular';
+  }
+  img {
+    width: 77%;
+  }
+  :last-child{
+    h3 {
+      min-width: 35%;
+      top: auto;
+      bottom: 2%;
+      color: white;
+    }
   }
 }
 

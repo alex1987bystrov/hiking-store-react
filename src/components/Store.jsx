@@ -1,6 +1,6 @@
 import { useState, createContext } from "react";
 import StoreNav from "./storeSliderComponent/StoreNav";
-import StoreContent from "./storeSliderComponent/StoreContent";
+import StoreContentSlide from "./storeSliderComponent/StoreContentSlide";
 
 export const StoreContext = createContext();
 export default function Store(){
@@ -20,10 +20,20 @@ export default function Store(){
     // const [touchPosition, setTouchPosition] = useState(null);
 
     function nextSlide () {
-        (slide < (items.length/2)-1) ? setSlide(slide => slide + 1) : setSlide(0);
+        // (slide < (items.length/2)-1) ? setSlide(slide => slide + 1) : setSlide(0);
+        if(items.length % 2 !== 0){
+            (slide < (items.length-1)) ? setSlide(slide => slide + 2) : setSlide(0);
+        }else{
+            (slide < (items.length-2)) ? setSlide(slide => slide + 2) : setSlide(0);
+        };
     };
     function prevSlide () {
-        (slide > 0) ? setSlide(slide => slide - 1) : setSlide((items.length/2)-1);
+        // (slide > 0) ? setSlide(slide => slide - 1) : setSlide((items.length/2)-1);
+        if(items.length % 2 === 0){
+            (slide > 0) ? setSlide(slide => slide - 2) : setSlide(items.length-2);
+        }else{
+            (slide > 0) ? setSlide(slide => slide - 2) : setSlide(items.length-1);
+        };
     };
     function goToSlide (number) {
         setSlide(number % items.length);
@@ -46,7 +56,7 @@ export default function Store(){
                 </div>
                 <div className="store-header"><h1>STORE</h1></div>
                 <div className="store-content-section">
-                    <StoreContent />
+                    <StoreContentSlide />
                 </div>
             </StoreContext.Provider>
         </div>
