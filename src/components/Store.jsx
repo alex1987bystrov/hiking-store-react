@@ -17,16 +17,43 @@ export default function Store(){
     ];
     const [items, setItems] = useState(initialItems);
     const [slide, setSlide] = useState(0);
-    // const [touchPosition, setTouchPosition] = useState(null);
+    const [touchPosition, setTouchPosition] = useState(null);
 
     function nextSlide () {
-        (slide < (items.length/2)-1) ? setSlide(slide => slide + 1) : setSlide(0);
+        if(items.length % 2 !== 0){
+            (slide < (items.length-1)) ? setSlide(slide => slide + 2) : setSlide(0);
+        }else{
+            (slide < (items.length-2)) ? setSlide(slide => slide + 2) : setSlide(0);
+        };
     };
     function prevSlide () {
-        (slide > 0) ? setSlide(slide => slide - 1) : setSlide((items.length/2)-1);
+        if(items.length % 2 === 0){
+            (slide > 0) ? setSlide(slide => slide - 2) : setSlide(items.length-2);
+        }else{
+            (slide > 0) ? setSlide(slide => slide - 2) : setSlide(items.length-1);
+        };
     };
     function goToSlide (number) {
         setSlide(number % items.length);
+    };
+
+    function handleTouchStart (e) {
+        const touchDown = e.touches[0].clientY;
+        setTouchPosition(touchDown);
+    };
+    function handleTouchMove (e) {
+        if (touchPosition === null) {
+        return;
+        };
+        const currentPosition = e.touches[0].clientY;
+        const direction = touchPosition - currentPosition;
+        if (direction > 10) {
+        nextSlide();
+        };
+        if (direction < -10) {
+        prevSlide();
+        };
+        setTouchPosition(null);
     };
 
     return(
@@ -45,7 +72,10 @@ export default function Store(){
                     <StoreNav />
                 </div>
                 <div className="store-header"><h1>STORE</h1></div>
-                <div className="store-content-section">
+                <div className="store-content-section"
+                    onTouchStart={handleTouchStart}
+                    onTouchMove={handleTouchMove}
+                >
                     <StoreContent />
                 </div>
             </StoreContext.Provider>

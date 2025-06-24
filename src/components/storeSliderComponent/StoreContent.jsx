@@ -6,12 +6,11 @@ export default function StoreContent() {
   const { slideNumber, items } = useContext(StoreContext);
 
   return (
-    <div
-      className="store-content"
-      style={{ transform: `translateY(-${slideNumber * 25}%)`, transition: '0.5s' }}
+    <div className="store-content"
+      style={{ transform: `translateY(-${slideNumber * 12.5}%)` }}
     >
-      {items.map((slide, index) => (
-          <StoreContentSlide key={index} data={slide} />
+      {items.map((item, index) => (
+        ((index % 2) === 0) ? <StoreContentSlide key={index} data={index} /> : ''
       ))}
     </div>
   );

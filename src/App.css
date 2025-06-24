@@ -1,42 +1,3 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
 *,*:after,*:before {
   box-sizing: border-box;
 }
@@ -330,23 +291,25 @@ p {
   margin-top: 5%;
   rotate: 135deg;
 }
+.arr-up:hover,.arr-down:hover {
+  border-right: 0.5rem solid;
+  border-top: 0.5rem solid;
+  border-color: rgba(18, 16, 13, 0.500);
+}
 
 .store-content-section {
   overflow: hidden;
   height: 100vh;
   width: 65%;
 }
-.store-content :nth-child(even) {
-  h3 {
-    min-width: 35%;
-    top: auto;
-    bottom: 2%;
-    color: white;
-  }
-  img {margin-top: 7%;}
+.store-content {
+  transition: 0.7s;
 }
-
 .store-slide {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   text-align: center;
   h3 {
@@ -355,12 +318,23 @@ p {
     align-items: center;
     justify-content: space-between;
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 36%;
   }
   span {
     font-size: 5rem;
     font-family: 'VerveineRegular';
+  }
+  img {
+    width: 77%;
+  }
+  :nth-child(2) {
+    h3 {
+      min-width: 35%;
+      top: auto;
+      bottom: 2%;
+      color: white;
+    }
   }
 }
 

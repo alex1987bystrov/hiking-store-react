@@ -1,5 +1,4 @@
 import { useState, createContext } from "react";
-// import PropTypes from "prop-types";
 import SlidesList from "./SliderList";
 import Dots from "./Dots";
 
@@ -75,13 +74,3 @@ export default function Slider ({ width, height }) {
     </div>
   );
 };
-
-// Slider.propTypes = {
-//   width: PropTypes.string,
-//   height: PropTypes.string
-// };
-
-// Slider.defaultProps = {
-//   width: "100%",
-//   height: "100%"
-// };

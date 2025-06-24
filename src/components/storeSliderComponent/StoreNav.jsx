@@ -8,7 +8,7 @@ export default function StoreNav(){
     function render () {
         const dots = [];
         for (let i = 0; i < slidesCount/2; i++) {
-          dots.push(<StoreDot key={`store-dot-${i}`} number={i} />);
+          dots.push(<StoreDot key={`store-dot-${i}`} number={i*2} />);
         }
         return dots;
     };
