@@ -291,6 +291,11 @@ p {
   margin-top: 5%;
   rotate: 135deg;
 }
+.arr-up:hover,.arr-down:hover {
+  border-right: 0.5rem solid;
+  border-top: 0.5rem solid;
+  border-color: rgba(18, 16, 13, 0.500);
+}
 
 .store-content-section {
   overflow: hidden;
