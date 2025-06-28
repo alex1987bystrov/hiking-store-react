@@ -13,11 +13,11 @@ export default function NavByNumber({nOfItems, nOfListItems}){
 
     function handleNext(){
         (index < nOfItems-1) ? setIndex(index => index + 1) : setIndex(0);
-        document.querySelector(links[(index < nOfItems-1) ? index + 1 : 0].link).scrollIntoView({block:'center'});
+        // document.querySelector(links[(index < nOfItems-1) ? index + 1 : 0].link).scrollIntoView({block:'center'});
     }
     function handlePrev(){
         (index > 0) ? setIndex(index => index - 1) : setIndex(nOfItems-1);
-        document.querySelector(links[(index > 0) ? index - 1 : nOfItems-1].link).scrollIntoView({block:'center'});
+        // document.querySelector(links[(index > 0) ? index - 1 : nOfItems-1].link).scrollIntoView({block:'center'});
     }
     return(
         <div className = "nav-by-number">

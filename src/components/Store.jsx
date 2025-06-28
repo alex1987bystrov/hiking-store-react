@@ -37,24 +37,24 @@ export default function Store(){
         setSlide(number % items.length);
     };
 
-    function handleTouchStart (e) {
-        const touchDown = e.touches[0].clientY;
-        setTouchPosition(touchDown);
-    };
-    function handleTouchMove (e) {
-        if (touchPosition === null) {
-        return;
-        };
-        const currentPosition = e.touches[0].clientY;
-        const direction = touchPosition - currentPosition;
-        if (direction > 10) {
-        nextSlide();
-        };
-        if (direction < -10) {
-        prevSlide();
-        };
-        setTouchPosition(null);
-    };
+    // function handleTouchStart (e) {
+    //     const touchDown = e.touches[0].clientY;
+    //     setTouchPosition(touchDown);
+    // };
+    // function handleTouchMove (e) {
+    //     if (touchPosition === null) {
+    //     return;
+    //     };
+    //     const currentPosition = e.touches[0].clientY;
+    //     const direction = touchPosition - currentPosition;
+    //     if (direction > 10) {
+    //     nextSlide();
+    //     };
+    //     if (direction < -10) {
+    //     prevSlide();
+    //     };
+    //     setTouchPosition(null);
+    // };
 
     return(
         <div className="store" id="store">
@@ -73,8 +73,8 @@ export default function Store(){
                 </div>
                 <div className="store-header"><h1>STORE</h1></div>
                 <div className="store-content-section"
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
+                    // onTouchStart={handleTouchStart}
+                    // onTouchMove={handleTouchMove}
                 >
                     <StoreContent />
                 </div>
