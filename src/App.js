@@ -5,7 +5,7 @@ import Tours from './components/Tours';
 import Store from './components/Store';
 import Contact from './components/Contact';
 
-export default function App() {//TO DO: for moving to another section, use context...
+export default function App() {
   return (
     <>
       <Home />
