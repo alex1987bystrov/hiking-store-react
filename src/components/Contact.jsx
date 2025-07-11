@@ -9,24 +9,24 @@ export default function Contact(){
                 In posuere elit eget lacus lacinia rutrum eu at leo.
             </p>
             <div className="social">
-                <a href="#" target="_blank">
+                <a href="https://www.facebook.com" target="blank">
                      <img src="icons/facebook.png" alt="icon"></img>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.instagram.com" target="blank">
                      <img src="icons/instagram.png" alt="icon"></img>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.tumblr.com" target="blank">
                      <img src="icons/tumblr.png" alt="icon"></img>
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.whatsapp.com" target="blank">
                      <img src="icons/whatsapp.png" alt="icon"></img>
                 </a>
             </div>
             <div className="designed">
-                <a href="http://www.freepik.com">Designed by Freepik</a>
+                <a href="http://www.freepik.com" target="blank">Designed by Freepik</a>
                 <br/>
                 <br/>
-                <a href="https://www.alex_bystrov_1987@mail.ru">Prodused by www.alex_bystrov_1987@mail.ru</a>
+                <a href="https://www.alex_bystrov_1987@mail.ru" target="blank">Prodused by www.alex_bystrov_1987@mail.ru</a>
             </div>
         </div>
     );

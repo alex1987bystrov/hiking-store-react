@@ -1,10 +1,9 @@
-import { useState, createContext } from "react";
+import { useState, useEffect, createContext } from "react";
 import StoreNav from "./storeSliderComponent/StoreNav";
 import StoreContent from "./storeSliderComponent/StoreContent";
 
 export const StoreContext = createContext();
 export default function Store(){
-
     const initialItems = [
         {url: 'images/store1.png', title: 'Promotion in the tent', price: '$56'},
         {url: 'images/store2.png', title: 'Starter package', price: '$29'},
@@ -15,10 +14,18 @@ export default function Store(){
         {url: 'images/store1.png', title: 'Promotion in the tent', price: '$56'},
         {url: 'images/store2.png', title: 'Starter package', price: '$29'},
     ];
+
     const [items, setItems] = useState(initialItems);
     const [slide, setSlide] = useState(0);
     const [touchPosition, setTouchPosition] = useState(null);
 
+    useEffect(() => {
+    fetch('/api/some/url')
+      .then(response => response.json())
+      .then(data => setItems(data))
+      .catch(error => console.error(error));
+    }, []);
+    
     function nextSlide () {
         if(items.length % 2 !== 0){
             (slide < (items.length-1)) ? setSlide(slide => slide + 2) : setSlide(0);

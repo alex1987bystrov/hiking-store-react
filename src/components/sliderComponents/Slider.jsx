@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import { useState, useEffect, createContext } from "react";
 import SlidesList from "./SliderList";
 import Dots from "./Dots";
 
@@ -14,6 +14,12 @@ export default function Slider ({ width, height }) {
   const [items, setItems] = useState(initialItems);
   const [slide, setSlide] = useState(0);
   const [touchPosition, setTouchPosition] = useState(null);
+  useEffect(() => {
+      fetch('/api/some/url')
+        .then(response => response.json())
+        .then(data => setItems(data))
+        .catch(error => console.error(error));
+      }, []);
   
   function changeSlide (direction = 1) {
     let slideNumber = 0;
