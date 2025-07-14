@@ -5,7 +5,7 @@
 ![page 3](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.3.jpg)
 ![page 4](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.4.jpg)
 ![page 5](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.5.jpg)
-![Image alt 1](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking1.1.jpg)
+![Image alt](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking1.1.jpg)
 ![Image alt 2](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking1.2.jpg)
 ![Image alt 3](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking1.3.jpg)
 ![Image alt 4](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking1.4.jpg)
