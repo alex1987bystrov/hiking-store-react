@@ -1,1 +1,1 @@
-![Image alt](https://github.com/alex1987bystrov/hiking-store-react/raw/main/{path}/image.png)
+rew
