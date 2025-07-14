@@ -20,7 +20,7 @@ export default function NavByNumber({nOfItems, nOfListItems}){
         // document.querySelector(links[(index > 0) ? index - 1 : nOfItems-1].link).scrollIntoView({block:'center'});
     }
     return(
-        <div className = "nav-by-number">
+        <div className = "nav-by-number" data-testid="NavByNumber">
             <nav id = "nav-panel-by-number">
                 <div className = "arr-left" onClick = {handlePrev}></div>
                 <ListItems nOfListItems = {nOfListItems} nOfItems = {nOfItems} index = {index} links = {links}/>

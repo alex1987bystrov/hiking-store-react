@@ -1,9 +1,7 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
+import 'jest-matchmedia-mock';
 import App from '../App';
-import NavTop from "./NavTop";
-import NavByNumber from "./NavByNumber";
-import Slider from "./sliderComponents/Slider";
 
 test('follow the link "Home" after clicking', () => {
     render(<App />);
@@ -39,4 +37,44 @@ test('follow the link "Contact" after clicking', () => {
     linkCont.addEventListener('click', () => {linkCont.classList.add('active')});
     fireEvent.click(linkCont);
     expect(linkCont).toHaveClass('active');
+});
+test('tests the "NavByNumber" panel', () => {
+    // const originalMatchMedia = window.matchMedia;
+    // window.matchMedia = (query) => ({
+    //   matches: query === '(max-width: 1090px)',
+    //   media: query,
+    //   onchange: null,
+    //   addListener: jest.fn(),
+    //   removeListener: jest.fn(),
+    //   addEventListener: jest.fn(),
+    //   removeEventListener: jest.fn(),
+    //   dispatchEvent: jest.fn(),
+    // });
+
+    // window.matchMedia = window.matchMedia || window.msMatchMedia;
+    // window.matchMedia.useMediaQuery('(max-width: 1090px)');
+    // render(<App />);
+    // const linkHome = screen.getByRole('link', { name: /Home/i })
+    // expect(linkHome).toBeVisible();
+
+    // window.matchMedia.useMediaQuery('(min-width: 1100px)');
+    // render(<App />);
+    // const Home = screen.getByRole('link', { name: /Home/i })
+    // expect(Home).toBeVisible();
+
+    // window.matchMedia.clear();
+
+    // render(
+    //     <App />
+    // );
+    
+    // const linkHome = screen.getByRole('link', { name: /Home/i })
+    // console.log(window.matchMedia);
+    // expect(linkHome).toBeVisible();
+
+    // const elem = screen.getByTestId('NavByNumber');
+    // const style = window.getComputedStyle(elem);
+    // expect(style.position).toBe('fixed');
+    
+    // window.matchMedia = originalMatchMedia;
 });
