@@ -1,6 +1,6 @@
 ![Иллюстрация к проекту](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.0.jpg)
 
-![page 1](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.1.jpg)
+![Иллюстрация к проекту](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.1.jpg)
 ![page 2](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.2.jpg)
 ![page 3](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.3.jpg)
 ![page 4](https://github.com/alex1987bystrov/hiking-store-react/raw/main/public/screenshots/hiking0.4.jpg)
