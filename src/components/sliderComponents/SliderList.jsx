@@ -7,11 +7,12 @@ export default function SlidesList() {
 
   return (
     <div
+      data-testid="slide-list"
       className="slide-list"
       style={{ transform: `translateX(-${slideNumber * 100}%)` }}
     >
       {items.map((slide, index) => (
-        <Slide key={index} data={slide} />
+        <Slide testid={`slide-${index}`} key={index} data={slide} />
       ))}
     </div>
   );

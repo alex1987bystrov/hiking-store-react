@@ -8,7 +8,7 @@ export default function Contact(){
                 Duis vitae tortor nec arcu condimentum ullamcorper quis eget felis. 
                 In posuere elit eget lacus lacinia rutrum eu at leo.
             </p>
-            <div className="social">
+            <div data-testid="social" className="social">
                 <a href="https://www.facebook.com" target="blank">
                      <img src="icons/facebook.png" alt="icon"></img>
                 </a>

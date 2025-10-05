@@ -15,9 +15,12 @@ export default function Dots() {
   };
 
   return (
-  <div className="dots">
+  <div 
+    data-testid="dots"
+    className="dots"
+    >
     {renderDots()}
-    <div className="arr-right" onClick={() => changeSlide(1)} />
+    <div data-testid="arr-right" className="arr-right" onClick={() => changeSlide(1)} />
   </div>
   );
 }

@@ -5,7 +5,7 @@ export default function StoreContentSlide({data}) {
   const { items } = useContext(StoreContext);
 
   return (
-    <div className="store-slide">
+    <div data-testid={`store-slide-${data}`} className="store-slide">
       <div>
         <h3>{items[data].title} <span>{items[data].price}</span></h3>
         <img className="store-img" src = {items[data].url} alt = "img"></img>

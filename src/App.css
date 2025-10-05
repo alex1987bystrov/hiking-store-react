@@ -439,7 +439,7 @@ p {
     margin: 2vw 0 2vw 0 ;
   }
 }
-@media (max-height:600px) {
+@media (max-height:1060px) {
   .store-slide {
     justify-content: center;
   }

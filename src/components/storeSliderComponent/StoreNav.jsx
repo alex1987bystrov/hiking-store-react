@@ -13,7 +13,7 @@ export default function StoreNav(){
         return dots;
     };
     return (
-        <div className="nav-store-dots">
+        <div data-testid="nav-store-dots" className="nav-store-dots">
             <div className="arr-up" onClick={() => nextSlide()} />
             {render()}
             <div className="arr-down" onClick={() => prevSlide()} />

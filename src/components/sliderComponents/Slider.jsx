@@ -61,6 +61,7 @@ export default function Slider ({ width, height }) {
   return (
     <div
       style={{ width, height }}
+      data-testid="slider"
       className="slider"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}

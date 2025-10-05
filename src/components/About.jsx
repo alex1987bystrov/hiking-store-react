@@ -1,6 +1,6 @@
 export default function About(){
     return(
-        <div className="about" id="about">
+        <div data-testid="about" className="about" id="about">
             <h2 className="head-about">ABOUT US</h2>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -1,6 +1,6 @@
-export default function Slide({ data: { url, title, poster } }) {
+export default function Slide({ testid, data: { url, title, poster } }) {
   return (
-    <div className="slide">
+    <div data-testid={testid} className="slide">
         {/* <iframe width="760" height="480"
         src={url} 
         title={title}
